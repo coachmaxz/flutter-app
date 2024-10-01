@@ -4,6 +4,15 @@ plugins {
   id "dev.flutter.flutter-gradle-plugin"
 }
 
+// def keystoreProperties = new Properties()
+// def keystorePropertiesFile = rootProject.file("key.properties")
+// if (keystorePropertiesFile.exists()) {
+//   keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+// }
+
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+
 android {
 
   namespace = "com.example.flutter_app"
@@ -20,8 +29,12 @@ android {
     jvmTarget = JavaVersion.VERSION_1_8
   }
 
-  def mode = 'dev'
-  def dateFormat = new Date().format('yyyy-MM-dd-HH-mm')
+  sourceSets {
+    main.java.srcDirs += "src/main/kotlin"
+  }
+
+  def mode = "dev"
+  def dateFormat = new Date().format("yyyy-MM-dd-HH-mm")
 
   defaultConfig {
     applicationId = "com.example.flutter_app"
@@ -29,17 +42,60 @@ android {
     targetSdk = flutter.targetSdkVersion
     versionCode = flutter.versionCode
     versionName = flutter.versionName
+    ndk.abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
     setProperty("archivesBaseName", "app"+"${mode}-"+"${versionName}-"+"build-${versionCode}-"+"${dateFormat}")
   }
 
-  buildTypes {
-    release {
-      signingConfig = signingConfigs.debug
+  configurations.all {
+    resolutionStrategy {
+      force "com.google.guava:guava:28.0-android"
     }
+  }
+
+  signingConfigs {
+    // debug {
+    //   keyAlias keystoreProperties["keyAlias"]
+    //   keyPassword keystoreProperties["keyPassword"]
+    //   storeFile keystoreProperties["storeFile"] ? file(keystoreProperties["storeFile"]) : null
+    //   storePassword keystoreProperties["storePassword"]
+    // }
+    // release {
+    //   keyAlias keystoreProperties["keyAlias"]
+    //   keyPassword keystoreProperties["keyPassword"]
+    //   storeFile keystoreProperties["storeFile"] ? file(keystoreProperties["storeFile"]) : null
+    //   storePassword keystoreProperties["storePassword"]
+    // }
+  }
+
+  buildTypes {
+    debug {
+      signingConfig signingConfigs.debug
+      minifyEnabled false
+      shrinkResources false
+    }
+    release {
+      signingConfig signingConfigs.debug
+      // signingConfig signingConfigs.release
+      // minifyEnabled true
+      // shrinkResources true
+      // proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+    }
+  }
+
+  lint {
+    abortOnError false
+    checkReleaseBuilds false
+    disable "InvalidPackage", "Instantiatable"
   }
 
 }
 
 flutter {
   source = "../.."
+}
+
+dependencies {
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+  implementation "androidx.multidex:multidex:2.0.1"
+  implementation "com.google.android.material:material:1.3.0"
 }
