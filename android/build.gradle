@@ -5,11 +5,10 @@ buildscript {
   repositories {
     google()
     mavenCentral()
-    jcenter()
   }
 
   dependencies {
-    classpath "com.android.tools.build:gradle:8.3.1"
+    classpath "com.android.tools.build:gradle:8.3.2"
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
   }
 
@@ -19,17 +18,16 @@ allprojects {
   repositories {
     google()
     mavenCentral()
-    jcenter()
   }
 }
 
-rootProject.buildDir = "../build"
+rootProject.layout.buildDirectory = "../build"
 
 subprojects {
-  project.buildDir = "${rootProject.buildDir}/${project.name}"
+  rootProject.layout.buildDirectory = "${rootProject.layout.buildDirectory}/${project.name}"
   project.evaluationDependsOn(":app")
 }
 
 tasks.register("clean", Delete) {
-  delete rootProject.buildDir
+  delete rootProject.layout.buildDirectory
 }
