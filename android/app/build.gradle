@@ -46,7 +46,7 @@ android {
     setProperty("archivesBaseName", "app"+"${mode}-"+"${versionName}-"+"build-${versionCode}-"+"${dateFormat}")
   }
 
-  configurations.all {
+  configurations.configureEach {
     resolutionStrategy {
       force "com.google.guava:guava:28.0-android"
     }
