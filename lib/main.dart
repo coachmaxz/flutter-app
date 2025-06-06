@@ -6,15 +6,11 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
-  const MyApp({
-    super.key,
-  });
-
+  const MyApp({ super.key });
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter App',
+      title: 'Flutter',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -25,5 +21,4 @@ class MyApp extends StatelessWidget {
       home: const Page01(),
     );
   }
-
 }
