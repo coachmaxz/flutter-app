@@ -6,15 +6,11 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
-  const MyApp({
-    super.key,
-  });
-
+  const MyApp({ super.key });
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter App',
+      title: 'Flutter',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -25,51 +21,33 @@ class MyApp extends StatelessWidget {
       home: const ScrollPage(),
     );
   }
-
 }
 
-class MyHomePage extends StatefulWidget {
-
-  const MyHomePage({
-    super.key, 
-  });
-
+class MainPage extends StatefulWidget {
+  const MainPage({ super.key });
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
-
+  State<MainPage> createState() => MainPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-
+class MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text(
-          'Flutter App', 
-          style: TextStyle(
-            color: Colors.white, 
-            fontWeight: FontWeight.w400,
-          ),
-        ),
-      ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget> [
+          children: <Widget>[
             Text(
-              'Hello World !!',
+              'Flutter App !!',
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 26,
                 color: Colors.black, 
                 fontWeight: FontWeight.w400,
               ),
             ),
           ],
         ),
-      ),
+      )
     );
   }
-
 }
