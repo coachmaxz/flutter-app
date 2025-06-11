@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_app/components/text.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -73,18 +75,14 @@ class MainPageState extends State<MainPage> {
             ),
             Container(
               margin: EdgeInsets.only(left: 20, right: 20),
-              padding: EdgeInsets.only(left: 15, right: 15, top: 3),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 8),
               color: Colors.grey.withOpacity(0.4),
               width: double.infinity,
               height: 50,
-              child: Text(
-                'ไทย / FC_Iconic',
-                style: TextStyle(
-                  fontSize: 32,
-                  color: Colors.black, 
-                  fontWeight: FontWeight.w400,
-                  fontFamily: 'FC_Iconic'
-                ),
+              child: P1(
+                text: 'ไทย / FC_Iconic',
+                size: 32,
+                color: Colors.black, 
               ),
             ),
             Container(
