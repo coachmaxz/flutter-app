@@ -35,13 +35,104 @@ class MainPageState extends State<MainPage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Flutter App !!',
-              style: TextStyle(
-                fontSize: 26,
-                color: Colors.black, 
-                fontWeight: FontWeight.w400,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          spacing: 2,
+          children: <Widget> [
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 8),
+              color: Colors.grey.withOpacity(0.4),
+              width: double.infinity,
+              height: 50,
+              child: Text(
+                'ไทย / Default',
+                style: TextStyle(
+                  fontSize: 23,
+                  color: Colors.black, 
+                  fontWeight: FontWeight.w400,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 8),
+              color: Colors.white,
+              width: double.infinity,
+              height: 50,
+              child: Text(
+                'ไทย / Kanit',
+                style: TextStyle(
+                  fontSize: 26,
+                  color: Colors.black, 
+                  fontWeight: FontWeight.w400,
+                  fontFamily: 'Kanit'
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 3),
+              color: Colors.grey.withOpacity(0.4),
+              width: double.infinity,
+              height: 50,
+              child: Text(
+                'ไทย / FC_Iconic',
+                style: TextStyle(
+                  fontSize: 32,
+                  color: Colors.black, 
+                  fontWeight: FontWeight.w400,
+                  fontFamily: 'FC_Iconic'
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 2),
+              color: Colors.white,
+              width: double.infinity,
+              height: 50,
+              child:Text(
+                'ไทย / FC_Minimal',
+                style: TextStyle(
+                  fontSize: 32,
+                  color: Colors.black, 
+                  fontWeight: FontWeight.w400,
+                  fontFamily: 'FC_Minimal'
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 8),
+              color: Colors.grey.withOpacity(0.4),
+              width: double.infinity,
+              height: 50,
+              child: Text(
+                'ไทย / FC_Subject_Rounded',
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.black, 
+                  fontWeight: FontWeight.w400,
+                  fontFamily: 'FC_Subject_Rounded'
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 8),
+              color: Colors.white,
+              width: double.infinity,
+              height: 50,
+              child: Text(
+                'ไทย / Font: Montserrat',
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.black, 
+                  fontWeight: FontWeight.w400,
+                  fontFamily: 'Montserrat'
+                ),
               ),
             ),
           ],

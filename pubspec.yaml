@@ -74,6 +74,39 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Kanit
+      fonts:
+        - asset: assets/fonts/Kanit_Thin.ttf
+          weight: 200
+        - asset: assets/fonts/Kanit_Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Kanit_Bold.ttf
+          weight: 800
+    - family: FC_Iconic
+      fonts:
+        - asset: assets/fonts/FC_Iconic_Regular.ttf
+          weight: 400
+        - asset: assets/fonts/FC_Iconic_Bold.ttf
+          weight: 800
+    - family: FC_Minimal
+      fonts:
+        - asset: assets/fonts/FC_Minimal_Regular.ttf
+          weight: 400
+        - asset: assets/fonts/FC_Minimal_Bold.ttf
+          weight: 800
+    - family: FC_Subject_Rounded
+      fonts:
+        - asset: assets/fonts/FC_Subject_Rounded_Regular.ttf
+          weight: 400
+        - asset: assets/fonts/FC_Subject_Rounded_Bold.ttf
+          weight: 800
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat_Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Montserrat_Bold.ttf
+          weight: 800
   # fonts:
   #   - family: Schyler
   #     fonts:
