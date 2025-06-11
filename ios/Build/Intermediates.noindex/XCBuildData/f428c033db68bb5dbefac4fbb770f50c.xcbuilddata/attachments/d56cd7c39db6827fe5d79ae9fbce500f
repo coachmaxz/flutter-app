@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/Runner-master.dia",
+    "emit-module-dependencies" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/Runner-master-emit-module.d",
+    "emit-module-diagnostics" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/Runner-master-emit-module.dia",
+    "swift-dependencies" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/Runner-master.swiftdeps"
+  },
+  "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Runner/AppDelegate.swift" : {
+    "const-values" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Volumes/DEVELOP/STUDIO/KNOWLEDGE/flutter-app/ios/Build/Intermediates.noindex/Runner.build/Debug-iphonesimulator/Runner.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  }
+}
