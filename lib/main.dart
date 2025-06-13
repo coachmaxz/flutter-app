@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/services/share_local_storage.dart';
 
-void main() {
+Future<void> main() async {
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await ShareLocalStorage().init();
+
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -29,6 +36,22 @@ class MainPage extends StatefulWidget {
 }
 
 class MainPageState extends State<MainPage> {
+
+  void getSharePref() async {
+
+    String? language = await ShareLocalStorage().getStringData('lang');
+    print(language);
+
+    setState(() {});
+
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getSharePref();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
